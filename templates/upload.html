@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Classification</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            <h1>Animal Breed Classification</h1>
+            <p>Upload an image to classify.</p>
+            <form action="/" method="POST" enctype="multipart/form-data">
+                <input type="file" name="file" id="file-upload" accept="image/*">
+                <button type="submit" class="btn">Upload and Predict</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
