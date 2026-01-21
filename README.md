@@ -58,7 +58,7 @@ Follow these steps to get the project running on your local machine:
 ### 1. Clone the Repository
 Open your terminal and run the following commands to download the code:
 ```bash
-git clone [https://github.com/ramkaje341/Image-Classification-and-Identification-of-Animal-Breeds.git]
+git clone https://github.com/ramkaje341/Image-Classification-and-Identification-of-Animal-Breeds.git
 ```
 ### 2. Install Dependencies
 Ensure you have Python installed, then install the required libraries:
