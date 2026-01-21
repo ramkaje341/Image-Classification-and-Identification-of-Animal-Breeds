@@ -50,3 +50,45 @@ This project is an end-to-end **Image Classification** system that identifies sp
 ├── train_model.py        # CNN training logic
 └── requirements.txt      # List of necessary libraries
 ```
+---
+## 💻 Installation & Setup
+
+Follow these steps to get the project running on your local machine:
+
+### 1. Clone the Repository
+Open your terminal and run the following commands to download the code:
+```bash
+git clone [https://github.com/ramkaje341/Image-Classification-and-Identification-of-Animal-Breeds.git]
+```
+### 2. Install Dependencies
+Ensure you have Python installed, then install the required libraries:
+pip install -r requirements.txt
+### 3. Start the Web Application
+Launch the server by running the main application script:
+python app.py
+### 4. Access the Interface
+Once the server is running, open your web browser and navigate to:
+URL: http://127.0.0.1:5000
+---
+## 🧠 Project Workflow
+
+The application follows a structured pipeline to transform a raw image upload into a breed identification:
+
+### 1. Data Preprocessing
+Before the image reaches the model, it undergoes several transformations:
+* **Resizing:** Images are scaled (e.g., to 224x224 pixels) to match the model's input layer.
+* **Normalization:** Pixel values are scaled from [0, 255] to [0, 1] to help the model converge faster.
+* **Expansion:** The image is converted into a 4D tensor (Batch Size, Height, Width, Channels).
+
+### 2. The Deep Learning Process
+The core of the project is a **Convolutional Neural Network (CNN)** that functions in three main stages:
+
+* **Feature Extraction (Convolutional Layers):** The model scans the image to identify patterns like edges, textures, and shapes (e.g., the shape of an animal's ear or the pattern of its fur).
+* **Dimensionality Reduction (Pooling Layers):** These layers reduce the size of the data while keeping the most important information, making the model more efficient.
+* **Classification (Fully Connected Layers):** Based on the features extracted, the final layers assign a probability score to each breed.
+
+
+### 3. Web Interaction (HTML/CSS + Flask)
+* The **HTML/CSS** frontend captures the image file.
+* The **Flask** backend passes this file to the trained `.h5` model.
+* The model returns the prediction, which is then rendered back on the web page for the user.
