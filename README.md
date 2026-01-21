@@ -92,3 +92,11 @@ The core of the project is a **Convolutional Neural Network (CNN)** that functio
 * The **HTML/CSS** frontend captures the image file.
 * The **Flask** backend passes this file to the trained `.h5` model.
 * The model returns the prediction, which is then rendered back on the web page for the user.
+---
+## 👤 Author
+   SRIRAM
+---
+## 📝 License
+
+This project is intended for educational purposes only.
+---
