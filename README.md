@@ -66,9 +66,7 @@ pip install -r requirements.txt
 ### 3. Start the Web Application
 Launch the server by running the main application script:
 python app.py
-### 4. Access the Interface
-Once the server is running, open your web browser and navigate to:
-URL: http://127.0.0.1:5000
+
 ---
 ## 🧠 Project Workflow
 
